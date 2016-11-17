@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/item_iv1" />
+
+    <TextView
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="TextView"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_iv1"
+        android:layout_toEndOf="@+id/item_iv1"
+        android:layout_marginStart="20dp"
+        android:id="@+id/item_tv1" />
+
+    <TextView
+        android:text="TextView"
+        android:textSize="10dp"
+        android:textColor="#3e1c1919"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:id="@+id/item_tv3"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/item_iv1" />
+
+    <TextView
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="TextView"
+        android:textSize="10dp"
+        android:textColor="#3e1c1919"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_tv2"
+        android:layout_below="@+id/item_tv1"
+        android:layout_alignStart="@+id/item_tv1" />
+
+</RelativeLayout>

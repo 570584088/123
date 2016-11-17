@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RadioGroup"/>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:checked="true"
+            android:text="首页"
+            android:textColor="@color/main_textcolor"
+            android:tag="0"
+            android:button="@null"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/hometab_expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton" />
+
+        <RadioButton
+            android:text="自查"
+            android:tag="1"
+            android:button="@null"
+            android:background="@null"
+            android:textColor="@color/main_textcolor"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/hometab_illtest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2" />
+
+        <RadioButton
+            android:text="资讯"
+            android:tag="2"
+            android:button="@null"
+            android:background="@null"
+            android:textColor="@color/main_textcolor"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/hometab_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3" />
+
+        <RadioButton
+            android:text="我的"
+            android:tag="3"
+            android:button="@null"
+            android:background="@null"
+            android:textColor="@color/main_textcolor"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/hometab_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4"/>
+    </RadioGroup>
+</RelativeLayout>
